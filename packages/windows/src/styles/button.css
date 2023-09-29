@@ -1,4 +1,7 @@
 .wui-button {
   border-style: none;
-  background-color: transparent;
+}
+
+.wui-button--standard {
+  background-color: var(--control-default);
 }

@@ -2,14 +2,24 @@ import { forwardRef } from 'react'
 import clsx from 'clsx'
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /**
+   * The variant to use.
+   * @default 'standard'
+   */
+  variant?: 'standard' | 'accent' | 'subtle'
+}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
-    const { className, children, ...other } = props
+    const { variant = 'standard', className, children, ...other } = props
 
     return (
-      <button ref={ref} className={clsx('wui-button', className)} {...other}>
+      <button
+        ref={ref}
+        className={clsx('wui-button', `wui-button--${variant}`, className)}
+        {...other}
+      >
         {children}
       </button>
     )
