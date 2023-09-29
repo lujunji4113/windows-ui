@@ -1,0 +1,10 @@
+{
+  "name": "@wui/eslint-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "^9.0.0"
+  }
+}

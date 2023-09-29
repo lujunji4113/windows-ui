@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+
+    "strict": true,
+
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist/esm"
+  },
+  "include": ["src"]
+}
