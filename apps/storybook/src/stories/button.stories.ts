@@ -31,6 +31,7 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     id: 'button-standard',
+    variant: 'standard',
     children: 'Text'
   }
 }
