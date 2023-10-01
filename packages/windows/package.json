@@ -26,13 +26,16 @@
     "build": "tsc --noEmit && rm -rf dist && pnpm build:cjs && pnpm build:esm && pnpm run build:css",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist/cjs",
     "build:esm": "tsc --project tsconfig.json",
-    "build:css": "postcss src/styles --dir dist/styles"
+    "build:css": "postcss src/styles/*.css --dir dist/styles"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.16",
     "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.0.2"
