@@ -1,3 +1,18 @@
 .wui-theme-dark {
+  /* Text */
+  --text-primary: #ffffff;
+
+  /* Fill */
   --control-default: rgba(255, 255, 255, 0.06);
+
+  /* Elevation */
+  --elevation-control-border: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 9%) 0%,
+    rgba(255, 255, 255, 7%) 10%
+  );
+
+  /* Stroke */
+
+  /* Backgrounds */
 }

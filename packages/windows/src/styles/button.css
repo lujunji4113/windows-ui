@@ -1,7 +1,37 @@
 .wui-button {
-  border-style: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* elevation */
+.wui-button--standard {
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    border-radius: 4px;
+    mask-image: linear-gradient(#ffffff, #ffffff),
+      linear-gradient(#ffffff, #ffffff);
+    mask-clip: content-box, border-box;
+    mask-composite: xor;
+  }
+}
+
+/* Padding */
+.wui-button--standard {
+  padding: 5px 11px;
 }
 
 .wui-button--standard {
   background-color: var(--control-default);
+  color: var(--text-primary);
+
+  &::before {
+    background: var(--elevation-control-border);
+  }
 }

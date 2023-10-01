@@ -1,6 +1,6 @@
 import { Theme } from '@wui/windows'
 import type { Preview } from '@storybook/react'
-import '@wui/windows/styles/themes/index.css'
+import '@wui/windows/styles/index.css'
 
 enum BackgroundColors {
   light = '#fafafa',

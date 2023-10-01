@@ -1,3 +1,18 @@
 .wui-theme-light {
+  /* Text */
+  --text-primary: rgba(0, 0, 0, 0.9);
+
+  /* Fill */
   --control-default: rgba(255, 255, 255, 0.7);
+
+  /* Elevation */
+  --elevation-control-border: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.06) 90.58%,
+    rgba(0, 0, 0, 0.16) 100%
+  );
+
+  /* Stroke */
+
+  /* Backgrounds */
 }

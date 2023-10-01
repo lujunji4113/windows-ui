@@ -18,7 +18,8 @@ const meta = {
   args: {
     style: {
       width: 120,
-      height: 32
+      height: 32,
+      padding: '4px 11px 6px'
     }
   }
 } satisfies Meta<typeof Button>
@@ -29,6 +30,7 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
+    id: 'button-standard',
     children: 'Text'
   }
 }

@@ -17,7 +17,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        className={clsx('wui-button', `wui-button--${variant}`, className)}
+        className={clsx(
+          'wui-button',
+          `wui-button--${variant}`,
+          'typography-body',
+          className
+        )}
         {...other}
       >
         {children}
