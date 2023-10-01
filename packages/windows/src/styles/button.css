@@ -34,4 +34,18 @@
   &::before {
     background: var(--elevation-control-border);
   }
+
+  &:hover {
+    background-color: var(--control-secondary);
+  }
+
+  &:active {
+    background-color: var(--control-tertiary);
+    border-color: var(--stroke-control-default);
+    color: var(--text-secondary);
+
+    &::before {
+      content: none;
+    }
+  }
 }
